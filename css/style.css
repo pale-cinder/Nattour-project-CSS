@@ -72,7 +72,12 @@ body {
     letter-spacing: 35px;
 
     animation-name: moveInLeft;
-    animation-duration: 4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    /* animation-delay: 2s; */
+
+    /* animation-iteration-count: 3; */
 
 }
 
@@ -93,6 +98,25 @@ body {
 
     }
     75% {
+        transform: translateX(15px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+
+
+    }
+    75% {
+        transform: translateX(-15px);
 
     }
     100% {
