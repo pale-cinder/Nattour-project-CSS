@@ -63,6 +63,9 @@ body {
     color: wheat;
     text-transform: uppercase;
 
+    backface-visibility: hidden; 
+    /* this prevent shaking while animation */
+
 }
 
 .heading-primary-main {
@@ -87,6 +90,8 @@ body {
     font-weight: 700;
     letter-spacing: 17px;
 
+    animation: moveInRight 1s ease-out;
+
 
 }
 
@@ -97,13 +102,14 @@ body {
 
 
     }
+
     75% {
         transform: translateX(15px);
 
     }
     100% {
         opacity: 1;
-        transform: translate(0);
+        transform: translate(0): 
 
     }
 }
