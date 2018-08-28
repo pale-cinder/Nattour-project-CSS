@@ -8,10 +8,12 @@ Dark green: #2ff485
 */
 
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 
 }
 
@@ -27,6 +29,8 @@ body {
     line-height: 1.7;
     color: white;
     padding: 3rem;
+
+    box-sizing: border-box;
 
 }
 
