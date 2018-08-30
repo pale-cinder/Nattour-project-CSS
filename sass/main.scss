@@ -1,16 +1,4 @@
-/*
-COLORS:
 
-Light green: #7ee56f
-Medium green: #5ef57a
-Dark green: #2ff485
-
-*/
-
-
-$color-primary: #5ef57a;
-$color-primary-light rgba(126, 80,11, 0.75);
-$color-primary-dark: rgba(46, 83,11, 0.75);
 
 
 *,
@@ -41,13 +29,13 @@ body {
 
 /* BEM a block is a standalone component */
 
-that is meaningful on its own.
+// that is meaningful on its own.
 .header {
     height: 95vh; 
     /* 95% of the viewport */
-    background-image: linear-gradient(to bottom, ($color-primary-light),
-                                                 ($color-primary-dark), 
-                                                   url(../img/13.jpg);
+    background-image: linear-gradient(to bottom, rgba(126, 80,11, 0.75),
+                                                 rgba(46, 83,11, 0.75)), 
+                                                 url(../img/13.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -130,7 +118,7 @@ that is meaningful on its own.
     }
     100% {
         opacity: 1;
-        transform: translate(0): 
+        transform: translate(0); 
 
     }
 }
