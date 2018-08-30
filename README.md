@@ -1,6 +1,6 @@
 # Nattour-project-CSS
 
-#Educational project:
+This is educational project:
 - build designed project; 
 - learning modern CSS techniques and properties;
 - learn complex CSS animations;
@@ -9,6 +9,8 @@
 - Sass;
 - CSS architecture; 
 - fundamental CSS concepts, and more.
+
+
 
 
 
