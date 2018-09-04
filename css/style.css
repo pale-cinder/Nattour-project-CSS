@@ -79,7 +79,11 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75));
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg); }
 
 .btn {
   /* 
