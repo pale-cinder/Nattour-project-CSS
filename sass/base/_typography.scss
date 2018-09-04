@@ -44,3 +44,17 @@ body {
         
     }
  }
+
+
+ .heading-secondary {
+     font-size: 6rem;
+     text-transform: uppercase;
+     //letter-spacing: 2.5rem;
+     font-weight: 400;
+     color: $color-brown;
+     display: inline-block;
+     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+     -webkit-background-clip: text;
+     color: transparent;
+
+ }
