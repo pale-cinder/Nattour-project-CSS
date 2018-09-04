@@ -41,7 +41,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lobster";
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
@@ -83,7 +83,8 @@ body {
   letter-spacing: .2rem;
   transition: all .2s; }
   .heading-secondary:hover {
-    transform: skewY(2deg); }
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(46, 83, 11, 0.75); }
 
 .btn {
   /* 
