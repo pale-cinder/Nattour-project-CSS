@@ -156,6 +156,14 @@ body {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: rgba(46, 83, 11, 0.75);
+  display: inline-block;
+  text-decoration: none;
+  border-button: 1px solid #a52a2a;
+  padding: 3px; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

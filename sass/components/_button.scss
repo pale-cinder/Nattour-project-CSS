@@ -64,3 +64,25 @@
     animation-fill-mode: backwards;
     }
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        //font-family: !important;
+        font-size: $default-font-size;
+        color: $color-primary-dark;
+        display: inline-block;
+        text-decoration: none;
+        border-button: 1px solid $color-brown;
+        padding: 3px;
+        
+    }
+
+    &.hover {
+
+    }
+    
+    &:active {
+
+    }
+}
