@@ -75,14 +75,22 @@
         text-decoration: none;
         border-button: 1px solid $color-brown;
         padding: 3px;
+        transition: all .2s;
         
     }
 
-    &.hover {
+    &:hover {
+        background-color: $color-primary-dark;
+        color: $color-green-1;
+        box-shadow: 0 1rem 2rem rgba($color-primary-light, .75);
+        transform: translateY(-2px);
+
 
     }
     
     &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-primary-light, .75);
+        transform: translateY(0);
 
     }
 }
