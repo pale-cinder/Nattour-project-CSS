@@ -65,3 +65,21 @@ body {
      }
 
  }
+
+ .heading-tertiary {
+     font-size: 1.6rem;
+     font-weight: 700;
+     text-transform: uppercase; 
+     color: brown;    
+
+ }
+
+ .paragraph {
+    font-size: 1.6rem;
+    color: brown;
+   
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+        }
+
+ }
