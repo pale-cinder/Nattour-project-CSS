@@ -1,7 +1,15 @@
 .composition {
+    position: relative;
+
     &__photo {
         width: 75%;
         box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .45);
         border-radius: 0.2rem;
+        position: absolute;
+
+        &--p1 {
+            left: 0;
+            top: -2rem;
+        }
     }
 }
