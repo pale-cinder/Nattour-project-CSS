@@ -181,10 +181,22 @@ body {
     width: 75%;
     box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45);
     border-radius: 0.2rem;
-    position: absolute; }
+    position: absolute;
+    z-index: 10;
+    transition: all .25s; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+    .composition__photo--p2 {
+      right: -20%;
+      top: 1rem; }
+    .composition__photo--p3 {
+      left: -20%;
+      top: 27rem; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(126, 80, 11, 0.55);
+      z-index: 20; }
 
 .row {
   max-width: 114rem;

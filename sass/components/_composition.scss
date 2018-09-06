@@ -6,10 +6,29 @@
         box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .45);
         border-radius: 0.2rem;
         position: absolute;
+        z-index: 10;
+        transition: all .25s;
 
         &--p1 {
             left: 0;
             top: -2rem;
+        }
+
+        &--p2 {
+            right: -20%;
+            top: 1rem;
+        }
+
+        &--p3 {
+            left: -20%;
+            top: 27rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-primary-light, .55);
+            z-index: 20;
+
         }
     }
 }
