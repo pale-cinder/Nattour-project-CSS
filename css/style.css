@@ -175,10 +175,16 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(126, 80, 11, 0.75);
   transform: translateY(0); }
 
-.composition__photo {
-  width: 75%;
-  box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45);
-  border-radius: 0.2rem; }
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 75%;
+    box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45);
+    border-radius: 0.2rem;
+    position: absolute; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
 
 .row {
   max-width: 114rem;
