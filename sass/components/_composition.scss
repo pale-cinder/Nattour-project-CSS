@@ -10,6 +10,7 @@
         transition: all .25s;
         outline-offset: 1rem;
 
+
         &--p1 {
             left: 0;
             top: -2rem;
@@ -27,10 +28,17 @@
 
         &:hover {
             outline: 1.25rem solid $color-primary-light;
-            transform: scale(1.05);
+            transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-primary-light, .55);
             z-index: 20;
 
         }
     }
+
+    // composition:hover &__photo:not(:hover) - composition and then hover the photo that is not hovered
+    &::hover &__photo:not(:hover) {
+        transform: scale(.95);
+
+    }
+
 }
