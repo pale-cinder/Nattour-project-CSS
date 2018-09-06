@@ -183,7 +183,8 @@ body {
     border-radius: 0.2rem;
     position: absolute;
     z-index: 10;
-    transition: all .25s; }
+    transition: all .25s;
+    outline-offset: 1rem; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -194,6 +195,7 @@ body {
       left: -20%;
       top: 27rem; }
     .composition__photo:hover {
+      outline: 1.25rem solid rgba(126, 80, 11, 0.75);
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(126, 80, 11, 0.55);
       z-index: 20; }
