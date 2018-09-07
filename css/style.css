@@ -235,15 +235,16 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 10rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 10rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 10rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 10rem) / 3) + 10rem); }
   .row .col-1-of-1 {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 1rem; }
 
 .header {
   height: 95vh;
@@ -274,4 +275,8 @@ body {
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/17.jpg);
-  background-size: cover; }
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -15rem; }
+  .section-features > * {
+    transform: skewY(7deg); }

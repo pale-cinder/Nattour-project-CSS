@@ -17,4 +17,14 @@
                                                  url(../img/17.jpg);
     background-size: cover;
 
+    // skewing
+    transform: skewY(-7deg);
+    margin-top: -15rem;
+
+    // .section-feature > * (all of them), select direct children
+    & > * {
+        transform: skewY(7deg);
+
+    }
+    
 }
