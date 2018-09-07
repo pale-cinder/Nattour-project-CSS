@@ -1,10 +1,18 @@
 .feature-box {
+    background-color: rgba($color-green-1, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .45);
 
     &__icon {
+        color: $color-primary-dark;
 
     }
 
     &__text {
-        
+        color: $color-primary-dark;
+
     }
 }
