@@ -208,9 +208,18 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45); }
+  box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45);
+  transition: transform .3s; }
   .feature-box__icon {
-    color: rgba(46, 83, 11, 0.75); }
+    color: rgba(46, 83, 11, 0.75);
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75));
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__text {
     color: rgba(46, 83, 11, 0.75); }
 
