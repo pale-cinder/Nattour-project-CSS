@@ -242,6 +242,8 @@ body {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-1 {
+    width: 100%; }
 
 .header {
   height: 95vh;
