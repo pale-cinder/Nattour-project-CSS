@@ -1,0 +1,13 @@
+.card {
+    //Add the perspective property
+    perspective: 150rem;
+    -moz-animation: 150rem;
+
+    background-color: orangered;
+    height: 50rem;
+    transition: all .8s;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
