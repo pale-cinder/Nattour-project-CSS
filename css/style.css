@@ -177,17 +177,23 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-animation: 150rem; }
+  -moz-animation: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
-    background-color: orangered;
-    color: #a52a2a;
+    color: #43304c;
     font-size: 2rem;
     height: 50rem;
-    transition: all .8s; }
-    .card__side--font {
-      background-color: orangered; }
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: #6b8175; }
     .card__side--back {
-      background-color: orange;
+      background-color: #91a250;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }

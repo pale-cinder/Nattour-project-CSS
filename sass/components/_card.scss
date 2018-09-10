@@ -3,25 +3,28 @@
     perspective: 150rem;
     -moz-animation: 150rem;
     position: relative;
+    height: 50rem;
     
     &__side {
-        background-color: orangered;
-        color: $color-brown;
+        color: $color-secondary-pl;
         font-size: 2rem;
+
         height: 50rem;
-        transition: all .8s;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        backface-visibility: hidden;
     
 
-        &--font {
-            background-color: orangered;
+        &--front {
+            background-color: $color-secondary-balance;
 
         }
 
         &--back {
-            background-color: orange;
+            background-color: $color-secondary-greengrass;
             transform: rotateY(180deg);
 
             
