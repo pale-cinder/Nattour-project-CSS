@@ -2,6 +2,7 @@
     //Add the perspective property
     perspective: 150rem;
     -moz-animation: 150rem;
+    position: relative;
     
     &__side {
         background-color: orangered;
@@ -9,6 +10,10 @@
         font-size: 2rem;
         height: 50rem;
         transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
 
         &--font {
             background-color: orangered;
