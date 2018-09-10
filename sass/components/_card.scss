@@ -2,12 +2,19 @@
     //Add the perspective property
     perspective: 150rem;
     -moz-animation: 150rem;
+    
+    &__side {
+        background-color: orangered;
+        color: $color-brown;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s;
 
-    background-color: orangered;
-    height: 50rem;
-    transition: all .8s;
+    }
 
-    &:hover {
+    &:hover &__side {
         transform: rotateY(180deg);
     }
 }
+
+//card:hover (when the card hovered) then --> .card__side { (will be transformed)
