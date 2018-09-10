@@ -280,3 +280,8 @@ body {
   margin-top: -15rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f2f3e6;
+  padding: 40rem 0 50rem 0;
+  margin-top: -15vh; }
