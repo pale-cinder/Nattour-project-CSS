@@ -10,10 +10,26 @@
         height: 50rem;
         transition: all .8s;
 
+        &--font {
+            background-color: orangered;
+
+        }
+
+        &--back {
+            background-color: orange;
+            transform: rotateY(180deg);
+
+            
+        }
+
     }
 
-    &:hover &__side {
+    &:hover &__side--front {
         transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
     }
 }
 
