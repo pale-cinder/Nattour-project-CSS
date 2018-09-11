@@ -16,16 +16,22 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-secondary-pl, .20);
     
 
         &--front {
-            background-color: $color-secondary-balance;
+            background-color: $color-green-1;
 
         }
 
         &--back {
-            background-color: $color-secondary-greengrass;
+            //background-color: $color-secondary-greengrass;
             transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-greenlight, $color-secondary-greengrass)
+            }
 
             
         }

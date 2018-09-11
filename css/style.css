@@ -189,12 +189,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(67, 48, 76, 0.2); }
     .card__side--front {
-      background-color: #6b8175; }
+      background-color: #f2f3e6; }
     .card__side--back {
-      background-color: #91a250;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #c7d3af, #91a250); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
