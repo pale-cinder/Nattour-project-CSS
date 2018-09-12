@@ -1,5 +1,8 @@
 .card {
     //Add the perspective property
+
+    //Functionality
+
     perspective: 150rem;
     -moz-animation: 150rem;
     position: relative;
@@ -45,6 +48,32 @@
     &:hover &__side--back {
         transform: rotateY(0);
     }
-}
+
+    //Front side style
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-greenlight, $color-secondary-greengrass), 
+                              url(../img/2.jpg);
+            
+        }
+
+        &--2 {
+            background-image: url(../img/2.jpg);
+            
+        }
+
+        &--3 {
+            background-image: url(../img/2.jpg);
+            
+        }
+    }
+
+    }
+   
+
 
 //card:hover (when the card hovered) then --> .card__side { (will be transformed)
