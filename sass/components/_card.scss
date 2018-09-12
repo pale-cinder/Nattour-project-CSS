@@ -19,7 +19,8 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: 3px; //rounded corners
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-secondary-pl, .20);
     
 
@@ -55,6 +56,10 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: color;
+        
+        //cutted corners
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-greenlight, $color-secondary-greengrass), 
