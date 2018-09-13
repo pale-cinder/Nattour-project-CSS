@@ -6,11 +6,11 @@
     perspective: 150rem;
     -moz-animation: 150rem;
     position: relative;
-    height: 52rem;
+    height: 50rem;
     
     &__side {
    
-        height: 52rem;
+        height: 50rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -126,6 +126,37 @@
         }
     }
 }
+
+    //Back side style
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-secondary-pl;
+        margin-bottom: 8rem;
+
+    }
+
+    &__price-only {
+        font-size: 1.4;
+        text-transform: uppercase; 
+        
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+
+    }
 
 }
    
