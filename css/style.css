@@ -181,8 +181,6 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    color: #43304c;
-    font-size: 2rem;
     height: 50rem;
     transition: all .8s ease;
     position: absolute;
@@ -215,6 +213,14 @@ body {
       background-image: url(../img/2.jpg); }
     .card__picture--3 {
       background-image: url(../img/2.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: right;
+    color: #c7d3af;
+    position: absolute;
+    top: 12rem;
+    right: 2rem; }
 
 .composition {
   position: relative; }
@@ -312,7 +318,7 @@ body {
 .section-about {
   background-color: #f2f3e6;
   padding: 25rem 0;
-  margin-top: 5vh; }
+  margin-top: 0vh; }
 
 .section-features {
   padding: 20rem 0;
