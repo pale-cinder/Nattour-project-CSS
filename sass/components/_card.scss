@@ -82,9 +82,20 @@
         text-transform: right;
         color: $color-secondary-greenlight;
         position: absolute;
-        top: 12rem;
-        right: 2rem;
+        top: 17rem;
+        right: -1.5rem;
+        width: 75%;
 
+    }
+    
+    &__heading-span {
+        padding: .75rem 1rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+                                            rgba($color-secondary-pl, .95), 
+                                            rgba($color-secondary-pl, .95));
+        }
 
     }
 

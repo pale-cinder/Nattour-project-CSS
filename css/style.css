@@ -219,8 +219,13 @@ body {
     text-transform: right;
     color: #c7d3af;
     position: absolute;
-    top: 12rem;
-    right: 2rem; }
+    top: 17rem;
+    right: -1.5rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: .75rem 1rem; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(67, 48, 76, 0.95), rgba(67, 48, 76, 0.95)); }
 
 .composition {
   position: relative; }
