@@ -6,11 +6,11 @@
     perspective: 150rem;
     -moz-animation: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
     
     &__side {
    
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -79,7 +79,7 @@
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;
-        text-transform: right;
+        text-align: right;
         color: $color-secondary-greenlight;
         position: absolute;
         top: 17rem;
@@ -90,6 +90,8 @@
     
     &__heading-span {
         padding: .75rem 1rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
@@ -99,7 +101,33 @@
 
     }
 
+    &__deails {
+        padding: 3rem;
+
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+        
+
+        li {
+            color: $color-secondary-pl;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-secondary-pl;
+
+            }
+
+        }
     }
+}
+
+}
    
 
 
