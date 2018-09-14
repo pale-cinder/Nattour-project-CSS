@@ -244,7 +244,7 @@ body {
       .card__deails ul li {
         color: #43304c;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 2rem;
         padding: 1rem; }
         .card__deails ul li:not(:last-child) {
           border-bottom: 1px solid #43304c; }
