@@ -30,7 +30,7 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 1rem;
+  padding: 0rem;
   box-sizing: inherit; }
 
 html {
@@ -258,9 +258,10 @@ body {
         color: #43304c;
         text-align: center;
         font-size: 2rem;
-        padding: 1rem; }
+        padding: 3rem; }
         .card__deails ul li:not(:last-child) {
-          border-bottom: 1px solid #43304c; }
+          border-bottom: 3px solid #43304c;
+          font-size: 2rem; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -334,14 +335,23 @@ body {
   background-color: #f2f3e6;
   border-radius: 3px;
   padding: 6rem;
-  font-size: 1.6rem; }
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
   .story__shape {
     width: 15rem;
     height: 15rem;
     float: left;
     background-color: green;
     -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%); }
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(12deg); }
 
 .row {
   max-width: 114rem;

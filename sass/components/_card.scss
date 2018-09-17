@@ -142,11 +142,11 @@
             color: $color-secondary-pl;
             text-align: center;
             font-size: 2rem;
-            padding: 1rem;
+            padding: 3rem;
 
             &:not(:last-child) {
-                border-bottom: 1px solid $color-secondary-pl;
-
+                border-bottom: 3px solid $color-secondary-pl;
+                               
             }
 
         }
