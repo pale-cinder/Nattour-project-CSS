@@ -339,7 +339,9 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: green; }
+    background-color: green;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); }
 
 .row {
   max-width: 114rem;

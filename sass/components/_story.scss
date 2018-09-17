@@ -12,6 +12,8 @@
         height: 15rem;
         float: left;
         background-color: green;
-        
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
     }
 }
