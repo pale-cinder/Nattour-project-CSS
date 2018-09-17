@@ -327,6 +327,13 @@ body {
   .feature-box__text {
     color: rgba(46, 83, 11, 0.75); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(67, 48, 76, 0.1);
+  background-color: #f2f3e6;
+  border-radius: 3px; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -390,3 +397,7 @@ body {
   background-color: #f2f3e6;
   padding: 35rem 0 15rem 0;
   margin-top: -15vh; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f2f3e6; }
