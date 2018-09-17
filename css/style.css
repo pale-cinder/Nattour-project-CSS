@@ -109,6 +109,12 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn {
   /* 
     &::before {
@@ -138,6 +144,11 @@ body {
     color: #a52a2a; }
     .btn--white::after {
       background-color: wheat; }
+  .btn--green {
+    background-color: #91a250;
+    color: #f2f3e6; }
+    .btn--green::after {
+      background-color: #91a250; }
   .btn::after {
     /* sudo element, treated like a child */
     content: "";
@@ -209,7 +220,9 @@ body {
     height: 23rem;
     background-blend-mode: color;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #c7d3af, #91a250), url(../img/2.jpg); }
     .card__picture--2 {
@@ -375,5 +388,5 @@ body {
 
 .section-tours {
   background-color: #f2f3e6;
-  padding: 35rem 0 50rem 0;
+  padding: 35rem 0 15rem 0;
   margin-top: -15vh; }

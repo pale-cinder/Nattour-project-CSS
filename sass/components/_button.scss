@@ -43,6 +43,15 @@
     padding: 1rem;
 } */
 
+    &--green {
+    background-color: $color-secondary-greengrass;
+    color: $color-green-1;
+
+        &::after {
+            background-color: $color-secondary-greengrass;
+        }
+}
+
     &::after {
     /* sudo element, treated like a child */
     content: "";
