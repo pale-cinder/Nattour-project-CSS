@@ -13,7 +13,7 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        background-color: green;
+        background-color: black;
 
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
@@ -26,6 +26,9 @@
 
     &__img {
         height: 100%;
+        //width: 100%;
+        padding: 0rem;
+        //float: fill;
     }
 
     &__text {
