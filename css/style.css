@@ -48,7 +48,7 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: wheat;
+  color: #f2f3e6;
   text-transform: uppercase;
   backface-visibility: hidden;
   /* this prevent shaking while animation */
@@ -140,15 +140,15 @@ body {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
-    background-color: wheat;
+    background-color: #f2f3e6;
     color: #a52a2a; }
     .btn--white::after {
-      background-color: wheat; }
+      background-color: #f2f3e6; }
   .btn--green {
-    background-color: #91a250;
+    background-color: #43304c;
     color: #f2f3e6; }
     .btn--green::after {
-      background-color: #91a250; }
+      background-color: #43304c; }
   .btn::after {
     /* sudo element, treated like a child */
     content: "";
@@ -403,13 +403,14 @@ body {
 
 .header {
   height: 95vh;
+  width: 100%;
   /* 95% of the viewport */
   background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/13.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); }
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -418,8 +419,8 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
 

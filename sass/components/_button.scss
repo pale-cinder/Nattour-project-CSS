@@ -31,11 +31,11 @@
 }
 
     &--white {
-    background-color: wheat;
+    background-color: $color-green-1;
     color: $color-brown;
 
         &::after {
-            background-color: wheat;
+            background-color: $color-green-1;
         }
 }
 /* 
@@ -44,11 +44,11 @@
 } */
 
     &--green {
-    background-color: $color-secondary-greengrass;
+    background-color: $color-secondary-pl;
     color: $color-green-1;
 
         &::after {
-            background-color: $color-secondary-greengrass;
+            background-color: $color-secondary-pl;
         }
 }
 
