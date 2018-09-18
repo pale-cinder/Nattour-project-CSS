@@ -8,6 +8,7 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
+    
 
     &__shape {
         width: 15rem;
@@ -42,6 +43,8 @@
 
     &__text {
         transform: skewX(12deg);
+        color: $color-secondary-pl;
+
 
     }
 
