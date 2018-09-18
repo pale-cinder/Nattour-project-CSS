@@ -1,6 +1,6 @@
 .bg-video{
     position: absolute;
-
+    padding: 0rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12,10 +12,14 @@
     z-index: -1;
     opacity: .25;
     overflow: hidden;
+    backface-visibility: hidden;
 
     &__content {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        overflow: hidden;
+        backface-visibility: hidden;
+        padding: 0rem;
     }
 }

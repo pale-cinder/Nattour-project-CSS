@@ -117,6 +117,7 @@ body {
 
 .bg-video {
   position: absolute;
+  padding: 0rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -126,11 +127,15 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .25;
-  overflow: hidden; }
+  overflow: hidden;
+  backface-visibility: hidden; }
   .bg-video__content {
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    overflow: hidden;
+    backface-visibility: hidden;
+    padding: 0rem; }
 
 .btn {
   /* 
@@ -461,4 +466,4 @@ body {
 
 .section-stories {
   position: relative;
-  padding: 0rem 0; }
+  padding: 0rem 0 0rem 0; }
