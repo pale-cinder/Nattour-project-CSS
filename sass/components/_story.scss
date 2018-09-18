@@ -32,7 +32,9 @@
         margin-right: auto;
         height: 100%;
 
-        transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%) scale(1.5);
+        backface-visibility: hidden;
+        transition: all .5s;
         //position: static;
     
 
@@ -54,11 +56,18 @@
         text-align: center;
         opacity: 0;
         transition: all .5s;
+        backface-visibility: hidden;
 
     }
 
     &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translate(-10%, -10%) scale(1.35);
+        filter: blur(3px) brightness(75%) grayscale(80%);
+
     }
 }
