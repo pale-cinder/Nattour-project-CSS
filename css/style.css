@@ -430,12 +430,17 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  padding: 0rem;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
-    left: 4rem; }
+    left: 4rem;
+    overflow: hidden;
+    backface-visibility: hidden; }
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
