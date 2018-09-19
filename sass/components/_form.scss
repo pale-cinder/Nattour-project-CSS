@@ -37,6 +37,7 @@
             color: $color-secondary-balance;
             
         }
+
     }
 
     &__label {
@@ -45,6 +46,14 @@
         margin-left: 2rem;
         margin-top: .7rem;
         display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label { 
+        //sibling selector (+) 
+        opacity: 0;
+        visibility: hidden;
+
     }
    
 }
