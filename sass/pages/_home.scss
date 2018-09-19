@@ -45,3 +45,19 @@
     //background-color: $color-green-1;
 
 }
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-secondary-balance, $color-secondary-pl);
+}
+
+.book {
+    background-image: url(../img/4.jpg);
+    background-size: 100%;
+
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-secondary-pl, .45);
+
+    height: 50rem;
+
+}

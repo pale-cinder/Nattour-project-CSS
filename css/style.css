@@ -472,3 +472,14 @@ body {
 .section-stories {
   position: relative;
   padding: 0rem 0 0rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #6b8175, #43304c); }
+
+.book {
+  background-image: url(../img/4.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(67, 48, 76, 0.45);
+  height: 50rem; }
