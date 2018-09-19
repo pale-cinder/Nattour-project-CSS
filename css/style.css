@@ -363,17 +363,21 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(67, 48, 76, 0.25);
+    border-bottom: 3px solid #43304c; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #a52a2a; }
+  .form__input::-webkit-input-placeholder {
+    color: #6b8175; }
 
-.form__input:focus {
-  outline: none;
-  box-shadow: 0 1rem 2rem rgba(67, 48, 76, 0.25);
-  border-bottom: 3px solid #43304c; }
-
-.form:focus:invalid {
-  border-bottom: 3px solid #a52a2a; }
-
-.form::-webkit-input-placeholder {
-  color: #6b8175; }
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block; }
 
 .story {
   width: 75%;
