@@ -97,6 +97,21 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.heading-s {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #a52a2a;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75));
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-s:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(46, 83, 11, 0.75); }
+
 .u-center-text {
   text-align: center; }
 
@@ -114,6 +129,9 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem; }
+
+.u-margin-bottom-s {
+  margin-bottom: 0rem; }
 
 .bg-video {
   position: absolute;
@@ -520,5 +538,4 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(67, 48, 76, 0.45);
   height: 50rem; }
   .book__form {
-    width: 50%;
-    padding: 6rem; }
+    width: 50%; }
