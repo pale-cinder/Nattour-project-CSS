@@ -410,7 +410,35 @@ body {
 
 .form__radio-label {
   font-size: 1.6rem;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid rgba(46, 83, 11, 0.75);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: .4rem; }
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(46, 83, 11, 0.75);
+    opacity: 0;
+    transition: opacity .2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .story {
   width: 75%;
