@@ -19,6 +19,7 @@
         width: 90%;
         display: block;
         transition: all .3s;
+        
 
       
 
@@ -48,6 +49,7 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        line-height: 0;
     }
 
     &__input:placeholder-shown + &__label { 
