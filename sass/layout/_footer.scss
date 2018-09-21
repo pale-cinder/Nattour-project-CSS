@@ -1,14 +1,17 @@
 .footer {
     background-color: $color-secondary-pl;
     padding: 10rem 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
     &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+
 
     }
 
     &__logo {
-        width: 15rem;
+        width: 55rem;
         height: auto;
 
     }
@@ -18,14 +21,35 @@
     }
 
     &__list {
+        list-style: none;
 
     }
 
     &__item {
+        display: inline-block;
+
+        &:not(::last-child) {
+            margin-right: 1.5rem;
+        }
 
     }
 
     &__link {
+        &:link,
+        &:visited {
+            color: $color-green-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+
+        }
+
+        &:hover,
+        &:active {
+            color: $color-secondary-greengrass;
+            box-shadow: 0 1rem 2rem rgba(black, 1);
+
+        }
 
     }
 }

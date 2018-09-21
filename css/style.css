@@ -498,6 +498,29 @@ body {
     transform: translate(-10%, -10%) scale(1.35);
     filter: blur(3px) brightness(75%) grayscale(80%); }
 
+.footer {
+  background-color: #43304c;
+  padding: 10rem 0;
+  font-size: 1.6rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 55rem;
+    height: auto; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+  .footer__link:link, .footer__link:visited {
+    color: #f2f3e6;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #91a250;
+    box-shadow: 0 1rem 2rem black; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -540,7 +563,7 @@ body {
     overflow: hidden;
     backface-visibility: hidden; }
   .header__logo {
-    height: 3.5rem; }
+    height: 5rem; }
   .header__text-box {
     position: absolute;
     top: 35%;
