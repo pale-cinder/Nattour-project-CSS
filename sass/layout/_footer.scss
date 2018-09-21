@@ -47,7 +47,9 @@
         &:hover,
         &:active {
             color: $color-secondary-greengrass;
-            box-shadow: 0 1rem 2rem rgba(black, 1);
+            box-shadow: 0 1rem 2rem rgba(black, 4);
+            transform: rotate(5deg) scale(1.3);
+
 
         }
 
