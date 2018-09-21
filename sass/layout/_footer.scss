@@ -6,17 +6,20 @@
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
-
+        
 
     }
 
     &__logo {
         width: 55rem;
         height: auto;
-
+      
     }
 
     &__navigation {
+        border-top: 1px solid $color-secondary-greengrass;
+        padding-top: 2rem;
+        display: inline-block;
 
     }
 
@@ -38,20 +41,30 @@
         &:link,
         &:visited {
             color: $color-green-1;
+            background-color: $color-secondary-pl;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
+            transition: all .2s;
+
 
         }
 
         &:hover,
         &:active {
             color: $color-secondary-greengrass;
-            box-shadow: 0 1rem 2rem rgba(black, 4);
-            transform: rotate(5deg) scale(1.3);
+            box-shadow: 0 0.5rem 1rem rgba(black, .25);
+            transform: rotate(3deg) scale(1.15);
 
 
         }
 
     }
+
+    &__copyright {
+        border-top: 1px solid $color-secondary-greengrass;
+        padding-top: 2rem;
+      
+    }
+
 }
