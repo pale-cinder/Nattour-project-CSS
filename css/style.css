@@ -500,17 +500,18 @@ body {
 
 .footer {
   background-color: #43304c;
-  padding: 10rem 0;
+  padding: 3rem 0;
   font-size: 1.6rem; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
-    width: 55rem;
+    width: 25rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #91a250;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    display: inline-block; }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -528,6 +529,11 @@ body {
     color: #91a250;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
     transform: rotate(3deg) scale(1.15); }
+  .footer__copyright {
+    border-top: 1px solid #91a250;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
 
 .row {
   max-width: 114rem;
@@ -604,7 +610,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #6b8175, #43304c); }
+  background-image: linear-gradient(to right bottom, rgba(126, 80, 11, 0.75), #43304c); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(242, 243, 230, 0.75) 0%, rgba(242, 243, 230, 0.75) 50%, transparent 50%), url(../img/4.jpg);
