@@ -19,6 +19,8 @@
 
         text-align: center;
 
+        cursor: pointer;
+
     }
 
     &__background {
@@ -112,6 +114,8 @@
         width: 100%;
     }
 
+
+
     //Icon
 
     &__icon {
@@ -137,6 +141,7 @@
             position: absolute;
             left: 0;
             padding: 0rem;
+            transition: all .2s;
 
         }
 
@@ -149,6 +154,30 @@
             top: .8rem;
         }
 
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(45deg);
+        
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+       transform: rotate(-45deg);    
     }
 
 }
