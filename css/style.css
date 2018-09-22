@@ -597,7 +597,8 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(67, 48, 76, 0.25); }
+  box-shadow: 0 1rem 3rem rgba(67, 48, 76, 0.25);
+  text-align: center; }
 
 .navigation__background {
   height: 6rem;
@@ -659,6 +660,28 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 0rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #f2f3e6;
+    display: inline-block;
+    padding: 0rem; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    padding: 0rem; }
+  .navigation__icon::before {
+    padding: 0rem;
+    top: -.8rem; }
+  .navigation__icon::after {
+    padding: 0rem;
+    top: .8rem; }
 
 .section-about {
   background-color: #f2f3e6;
