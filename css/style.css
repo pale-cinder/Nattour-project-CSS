@@ -447,6 +447,35 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5000; }
+  .popup__content {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #f2f3e6;
+    box-shadow: 0 2rem 4rem rgba(67, 48, 76, 0.45);
+    border-radius: 3px;
+    display: table; }
+  .popup__left {
+    width: 33.3333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.6667%;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup img {
+    display: block;
+    width: 100%; }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -610,7 +639,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#91a250 15%, rgba(126, 80, 11, 0.75));
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 0.86); }
 
 .navigation__nav {
   height: 100vh;
@@ -620,7 +649,8 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 0.8s cubic-bezier(1, 0, 0, 1); }
+  -webkit-transition: all 0.8s cubic-bezier(0.7, 0.135, 0.15, 0.7);
+  transition: all 0.8s cubic-bezier(0.7, 0.135, 0.15, 0.7); }
 
 .navigation__list {
   position: absolute;
@@ -656,7 +686,7 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(99.9); }
+  transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -696,11 +726,11 @@ body {
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
-  transform: rotate(45deg); }
+  transform: rotate(135deg); }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
-  transform: rotate(-45deg); }
+  transform: rotate(-135deg); }
 
 .section-about {
   background-color: #f2f3e6;
