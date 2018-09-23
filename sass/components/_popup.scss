@@ -6,6 +6,7 @@
     left: 0;
     background-color: rgba(black, .8);
     z-index: 5000;
+   
 
 
 
@@ -19,6 +20,7 @@
 
         border-radius: 3px;
         display: table;
+        overflow: hidden;
 
     }
 
@@ -32,15 +34,18 @@
         width: 66.6667%;
         display: table-cell;
         vertical-align: middle;
+        padding: 3rem 5rem;
     }
 
-    img {
+    &__img {
         display: block;   
         width: 100%;
 
     }
 
-    text {
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
 
     }
 }
