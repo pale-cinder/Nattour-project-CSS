@@ -454,7 +454,8 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 5000; }
+  z-index: 5000;
+  display: none; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -478,11 +479,18 @@ body {
     display: block;
     width: 100%; }
   .popup__text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #43304c;
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #43304c; }
+    column-rule: 1px solid #43304c;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .story {
   width: 75%;
