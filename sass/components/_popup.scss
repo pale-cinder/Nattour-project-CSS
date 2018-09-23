@@ -17,6 +17,26 @@
 
     }
 
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-secondary-pl;
+            position: absolute;
+            top: 1.5rem;
+            right: 2.5rem;
+            font-size: 5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+            
+        }
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
     &__content {
         @include absCenter;
 

@@ -461,6 +461,18 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup__close:link, .popup__close:visited {
+    color: #43304c;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: rgba(126, 80, 11, 0.75); }
   .popup__content {
     position: absolute;
     top: 50%;
