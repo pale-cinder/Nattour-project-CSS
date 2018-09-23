@@ -11,31 +11,6 @@
     visibility: hidden;
     transition: all .3s;
 
-    &:target {
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    &__close {
-        &:link,
-        &:visited {
-            color: $color-secondary-pl;
-            position: absolute;
-            top: 1.5rem;
-            right: 2.5rem;
-            font-size: 5rem;
-            text-decoration: none;
-            display: inline-block;
-            transition: all .2s;
-            line-height: 1;
-            
-        }
-
-        &:hover {
-            color: $color-primary-light;
-        }
-    }
 
     &__content {
         @include absCenter;
@@ -48,6 +23,9 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.45);
+        transition: all .5s .2s;
 
     }
 
@@ -89,4 +67,41 @@
         hyphens: auto;
 
     }
+
+    // Cancel button 
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    // Open states
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-secondary-pl;
+            position: absolute;
+            top: 1.5rem;
+            right: 2.5rem;
+            font-size: 5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+            
+        }
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+
 }
