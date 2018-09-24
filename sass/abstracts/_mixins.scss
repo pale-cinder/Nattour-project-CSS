@@ -37,8 +37,20 @@
 // -   desktop
 
 @mixin respond ($breakpoint) {
-    @if $breakpoint == phone {
-        
+    @if $breakpoint == phone { @content };
+        @media (max-width: 600px) { @content };
+    }
+
+    @if $breakpoint == tab-port { @content };
+        @media (max-width: 900px) { @content };
+    }
+
+    @if $breakpoint == tab-land { @content };
+        @media (max-width: 1200px) { @content };
+    }
+
+    @if $breakpoint == desktop { @content };
+        @media (min-width: 1800px) { @content };
     }
     
 }
