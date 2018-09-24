@@ -11,23 +11,32 @@ html {
     /* this is a root font size. --> 1rem = 10px */
     font-size: 62.5%;
 
-    
+    //by using rem we make an entire layout dependent on the font size
+    // 10px / 16px = 62.5%
    
 
-    @include respond(phone) {
-        font-size: 50%;
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+
+    // phone and tab-port are the same
+
+    
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px, 9/16=56.25%
     }
 
     @include respond(tab-port) {
-        font-size: 60%;
+        font-size: 50%; //1rem = 8px, 8/16=60%
     }
 
-    @include respond(tab-land) {
-        font-size: 70%;
-    }
+    // @include respond(phone) {
+    //     font-size: 30%;
+    // }
 
     @include respond(desktop) {
-        font-size: 80%;
+        font-size: 75%;
     }
  }
 
