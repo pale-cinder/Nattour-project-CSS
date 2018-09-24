@@ -26,9 +26,6 @@
 // [1200 - 1800]:  Is where regular style apply
 // 1800px + :      Desktop
 
-@mixin respond-phone {
-    @media (max-width: 600px) { @content };    
-}
 
 // $breakpoint arguement choices:
 // -   phone
@@ -36,21 +33,24 @@
 // -   tab-land
 // -   desktop
 
+// 1em = 16px
+
+
 @mixin respond ($breakpoint) {
     @if $breakpoint == phone { @content };
-        @media (max-width: 600px) { @content };
+        @media (max-width: 37.5em) { @content }; //600px
     }
 
     @if $breakpoint == tab-port { @content };
-        @media (max-width: 900px) { @content };
+        @media (max-width: 56.25em) { @content }; //900px
     }
 
     @if $breakpoint == tab-land { @content };
-        @media (max-width: 1200px) { @content };
+        @media (max-width: 75em) { @content }; //1200px
     }
 
     @if $breakpoint == desktop { @content };
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 112.5em) { @content }; //1800px
     }
     
 }
