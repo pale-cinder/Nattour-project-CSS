@@ -11,10 +11,13 @@
         @include respond(tab-port) {
             margin-bottom: $gutter-vertical-small;
         }
-
     }
 
+    @include respond(tab-port) {
+        max-width: 50rem;
+    }
 
+    
 
     @include clearfix;
 
