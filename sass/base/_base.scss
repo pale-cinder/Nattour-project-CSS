@@ -21,6 +21,8 @@ html {
 
     // phone and tab-port are the same
 
+    // Order: Base + topography > general layout + grid > page layout > components
+
     
 
     @include respond(tab-land) {
@@ -42,6 +44,11 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0; //1rem = 8px, 8/16=60%
+    }
 
 }
 
