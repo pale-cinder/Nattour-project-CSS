@@ -380,7 +380,7 @@ body {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
-          transform: scale(1.8);
+          transform: scale(2);
           z-index: 100; } }
     .composition__photo:hover {
       outline: 1.25rem solid rgba(126, 80, 11, 0.75);
@@ -398,6 +398,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(126, 80, 11, 0.45);
   transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     color: rgba(46, 83, 11, 0.75);
     font-size: 6rem;
@@ -406,6 +409,9 @@ body {
     background-image: linear-gradient(to right, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75));
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__text {
@@ -867,7 +873,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f2f3e6;
