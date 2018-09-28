@@ -6,6 +6,10 @@
 
     margin-top: 0vh;
 
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+
 }
 
 .section-features {
