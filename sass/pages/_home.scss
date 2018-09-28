@@ -26,7 +26,10 @@
     // .section-feature > * (all of them), select direct children
     & > * {
         transform: skewY(7deg);
+    }
 
+    @include respond(tab-port) {
+        padding: 15rem 0;
     }
     
 }
@@ -34,23 +37,32 @@
 
 .section-tours {
     background-color: $color-green-1;
-  
     padding: 35rem 0 5rem 0;
-
     margin-top: -15vh;
+
+    @include respond(tab-port) {
+        padding: 30rem 0 0rem 0;
+    }
 
 }
 
 .section-stories {
     position: relative;
-
     padding: 0rem 0 0rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
    
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-pl);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
