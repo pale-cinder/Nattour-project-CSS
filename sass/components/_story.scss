@@ -8,6 +8,16 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
+
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 2rem;
+        padding-left: 5rem;
+    }
+
+    @include respond(port-tab) {
+        transform: skewX(0); 
+    }
     
 
     &__shape {
@@ -24,6 +34,11 @@
         transform: translateX(-3rem) skewX(12deg);
 
         position: relative;
+
+
+        @include respond(port-tab) {
+            transform: translateX(-3rem) skewX(0); 
+        }
 
     }
 
@@ -44,6 +59,11 @@
     &__text {
         transform: skewX(12deg);
         color: $color-secondary-pl;
+
+        
+        @include respond(port-tab) {
+            transform: skewX(0); 
+        }
 
 
     }
