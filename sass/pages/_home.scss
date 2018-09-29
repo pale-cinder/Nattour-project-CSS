@@ -81,8 +81,16 @@
     @include respond(tab-land) {
             background-image: linear-gradient(105deg, 
             rgba($color-green-1, .75) 0%,
-            rgba($color-green-1, .75) 70%,
-            transparent 70%),
+            rgba($color-green-1, .75) 65%,
+            transparent 65%),
+        url(../img/4.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+            background-image: linear-gradient(to right, 
+            rgba($color-green-1, .75) 0%,
+            rgba($color-green-1, .75) 100%),
         url(../img/4.jpg);
     }
 
@@ -91,7 +99,11 @@
         //padding: 6rem;
 
         @include respond(tab-land) {
-            width: 70%;
+            width: 65%;
+        }
+
+        @include respond(tab-land) {
+            width: 100%;
         }
 
     }
