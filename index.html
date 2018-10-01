@@ -488,7 +488,17 @@
         <footer class="footer">
 
                 <div class="footer__logo-box">
-                        <img src="img/mountain.svg" alt="logo" class="footer__logo">
+                        <!-- Art Direction - different images for different screens -->
+                        <picture class="footer__logo">
+                                <source srcset="img/logo-white.png 1x, img/logo-white.png 2x"
+                                                media="(max-width: 56.25em)">
+                                                <!-- Density switching  - use high resolution or the low resolution img  depending on  which the web-page is viewed from-->
+                                <img srcset="img/mountain.svg 1x, img/mountain.svg 2x" alt="logo">
+                        </picture>
+
+
+                        <!-- <img src="img/mountain.svg" alt="logo" class="footer__logo"> -->
+
                 </div>
 
                 <div class="row">
