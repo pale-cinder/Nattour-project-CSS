@@ -42,6 +42,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -75,12 +78,20 @@ body {
     animation-timing-function: ease-out;
     /* animation-delay: 2s; */
     /* animation-iteration-count: 3; */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 1rem;
+        font-family: .5rem; } }
 
 .heading-secondary {
   font-size: 6rem;
@@ -96,6 +107,9 @@ body {
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(46, 83, 11, 0.75); }
@@ -777,6 +791,10 @@ body {
   padding: 0rem;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%); }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -813,6 +831,10 @@ body {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -828,6 +850,10 @@ body {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
