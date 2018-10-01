@@ -691,7 +691,8 @@ body {
         margin-bottom: 6rem; } }
   .footer__logo {
     width: 25rem;
-    height: auto; }
+    height: auto;
+    filter: opacity(75%); }
   .footer__navigation {
     border-top: 1px solid #91a250;
     padding-top: 2rem;
@@ -783,7 +784,9 @@ body {
     overflow: hidden;
     backface-visibility: hidden; }
   .header__logo {
-    height: 5rem; }
+    width: 25rem;
+    height: auto;
+    filter: opacity(75%); }
   .header__text-box {
     position: absolute;
     top: 35%;
