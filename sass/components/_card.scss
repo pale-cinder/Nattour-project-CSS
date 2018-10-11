@@ -16,6 +16,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden; //for Safari browser support
         backface-visibility: hidden;
         border-radius: 3px; //rounded corners
         overflow: hidden;
