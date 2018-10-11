@@ -814,7 +814,7 @@ body {
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
     .header {
       background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/13.jpg); } }
-  @media (min-width: 125em) and (-webkit-min-device-pixel-ratio: 3) {
+  @media (min-width: 125em), (-webkit-min-device-pixel-ratio: 2) {
     .header {
       background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/3.jpg); } }
   @media (max-width: 37.5em) {
