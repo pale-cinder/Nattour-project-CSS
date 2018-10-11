@@ -19,7 +19,7 @@
 
 
     //changing the pixel  ratio (DPR) change the image that would be loaded in header
-    @media (min-resolution: 192dpi) {
+    @media (min-resolution: 192dpi)  and (min-width: 600px) {
         background-image: linear-gradient(to bottom, rgba(126, 80,11, 0.75),
                                                  rgba(46, 83,11, 0.75)), 
                                                  url(../img/13.jpg);
