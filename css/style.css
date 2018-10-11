@@ -782,7 +782,7 @@ body {
 .header {
   height: 95vh;
   /* 95% of the viewport */
-  background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/13.jpg);
+  background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/11.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -791,6 +791,9 @@ body {
   padding: 0rem;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%); }
+  @media (min-resolution: 192dpi) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/13.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
