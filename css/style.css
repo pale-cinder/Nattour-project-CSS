@@ -791,10 +791,10 @@ body {
   padding: 0rem;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%); }
-  @media (min-resolution: 192dpi) and (min-width: 600px) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
     .header {
       background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/13.jpg); } }
-  @media (min-width: 2000px) {
+  @media (min-width: 125em) {
     .header {
       background-image: linear-gradient(to bottom, rgba(126, 80, 11, 0.75), rgba(46, 83, 11, 0.75)), url(../img/5.jpg); } }
   @media (max-width: 37.5em) {
