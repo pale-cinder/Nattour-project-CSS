@@ -407,14 +407,15 @@ body {
       @media (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0;
-          transform: scale(1.6); } }
+          transform: scale(1); } }
     .composition__photo--p2 {
       right: -20%;
       top: 1rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p2 {
           top: -1rem;
-          transform: scale(1.8); } }
+          left: 0;
+          transform: scale(1); } }
     .composition__photo--p3 {
       left: -20%;
       top: 27rem; }
@@ -422,7 +423,7 @@ body {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
-          transform: scale(2);
+          transform: scale(1);
           z-index: 100; } }
     .composition__photo:hover {
       outline: 1.25rem solid rgba(126, 80, 11, 0.75);
