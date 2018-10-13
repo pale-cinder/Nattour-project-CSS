@@ -9,9 +9,8 @@
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css compress:css"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
   "devDependencies": {
     "concat": "^1.0.3",
     "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
     "postcss-cli": "^6.0.0",
     "postcss-prefixer": "^2.1.0",
     "prefix": "^1.0.0",
